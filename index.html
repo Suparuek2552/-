@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เกมชักเย่อ 2 คน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- หน้าแรก -->
+<div id="startScreen" class="screen active">
+    <h1>🎀 เกมชักเย่อ 🎀</h1>
+    <button id="startBtn">เริ่มเกม</button>
+</div>
+
+<!-- หน้าเกม -->
+<div id="gameScreen" class="screen">
+    <div class="timer">เวลา: <span id="time">10</span></div>
+
+    <div class="arena">
+        <div class="zone left-zone">A</div>
+
+        <div class="rope-container">
+            <div id="rope"></div>
+        </div>
+
+        <div class="zone right-zone">B</div>
+    </div>
+
+    <p class="hint">ผู้เล่นซ้ายกดปุ่ม <b>A</b> | ผู้เล่นขวากดปุ่ม <b>→</b></p>
+</div>
+
+<!-- หน้าผลลัพธ์ -->
+<div id="resultScreen" class="screen">
+    <h2 id="resultText"></h2>
+    <p id="scoreText"></p>
+    <button id="retryBtn">เล่นอีกครั้ง</button>
+    <button id="homeBtn">กลับหน้าแรก</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

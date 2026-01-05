@@ -1,0 +1,85 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(#ffd6e8, #cce6ff);
+    text-align: center;
+    margin: 0;
+}
+
+.screen {
+    display: none;
+    padding: 40px;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #ff4f9a;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #ff8ccf;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background: #ff5fb2;
+}
+
+.timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.zone {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.left-zone {
+    background: rgb(187, 153, 243);
+}
+
+.right-zone {
+    background: rgb(249, 255, 160);
+}
+
+.rope-container {
+    width: 300px;
+    height: 20px;
+    background: #c9c7c7;
+    margin: 0 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+#rope {
+    width: 100px;
+    height: 20px;
+    background: #f8c565;
+    position: absolute;
+    left: 100px;
+    border-radius: 10px;
+}
+
+.hint {
+    font-size: 16px;
+    color: #333;
+}
